@@ -13,6 +13,7 @@ module.exports = class BaseModel {
     this.items = [];
     this.name = name;
     this.filePath = `${__dirname}/../../mocks/${this.name.toLowerCase()}.mocks.json`;
+    this.filePathReset = `${__dirname}/../../mocks/${this.name.toLowerCase()}.mocks.backup.json`;
     this.load();
   }
 
@@ -70,5 +71,14 @@ module.exports = class BaseModel {
     if (objIndex === -1) throw new NotFoundError(`Cannot delete ${this.name} id=${id} : not found`);
     this.items = this.items.filter(item => item.id !== id);
     this.save();
+  }
+
+  reset() {
+    try {
+      this.items = JSON.parse(fs.readFileSync(this.filePathReset, 'utf8'));
+      this.save();
+    } catch (err) {
+      if (err.message === 'Unexpected end of JSON input') logger.log(`Warning : ${this.filePath} has wrong JSON format`);
+    }
   }
 };
