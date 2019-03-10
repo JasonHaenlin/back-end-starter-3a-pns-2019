@@ -28,6 +28,8 @@ router.get('/', (req, res, next) => {
 
 router.get('/:studentId/tickets', (req, res) => {
   try {
+    console.log('student tickets');
+
     const student = Student.getById(req.params.studentId);
     const tickets = [];
 
