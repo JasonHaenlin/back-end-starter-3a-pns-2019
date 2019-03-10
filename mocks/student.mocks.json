@@ -1,0 +1,61 @@
+[
+  {
+    "firstName": "xisto",
+    "lastName": "castro",
+    "email": "xisto.castro@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/49.jpg",
+    "note": "a note or not",
+    "id": 1551797125999
+  },
+  {
+    "firstName": "aubin",
+    "lastName": "olivier",
+    "email": "aubin.olivier@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/42.jpg",
+    "id": 1551864866593
+  },
+  {
+    "firstName": "jasper",
+    "lastName": "kumar",
+    "email": "jasper.kumar@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/79.jpg",
+    "id": 1551865212509
+  },
+  {
+    "firstName": "kuzey",
+    "lastName": "taşçı",
+    "email": "kuzey.taşçı@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/99.jpg",
+    "id": 1551865220152,
+    "note": "don't be nice with him"
+  },
+  {
+    "firstName": "shuangshuang",
+    "lastName": "chen",
+    "email": "shuangshuang@hime.com",
+    "profilePicture": "https://api.adorable.io/avatars/285/1551898068811",
+    "id": 1551898068811
+  },
+  {
+    "firstName": "jason",
+    "lastName": "haenlin",
+    "email": "Jason@strange.com",
+    "profilePicture": "https://api.adorable.io/avatars/285/1551898103342",
+    "id": 1551898103342
+  },
+  {
+    "firstName": "maxime",
+    "lastName": "castellano",
+    "email": "maxime@vagabond.com",
+    "profilePicture": "https://api.adorable.io/avatars/285/1551898135797",
+    "id": 1551898135797,
+    "note": "#MAM"
+  },
+  {
+    "firstName": "betsara",
+    "lastName": "marcellin",
+    "email": "betsara@unknown.com",
+    "profilePicture": "https://api.adorable.io/avatars/285/1551898175960",
+    "id": 1551898175960
+  }
+]
