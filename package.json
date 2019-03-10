@@ -8,7 +8,7 @@
     "dev": "./node_modules/.bin/nodemon app/index.js",
     "lint": "./node_modules/.bin/eslint -c .eslintrc.js app/",
     "lint:fix": "./node_modules/.bin/eslint -c .eslintrc.js app/ --fix",
-    "deploy": "pm2 start server.js --log-date-format \"YYYY-MM-DD HH:mm Z\" --name nodejs-td"
+    "deploy": "pm2 start app/index.js --log-date-format \"YYYY-MM-DD HH:mm Z\" --name nodejs-td"
   },
   "precommit": [
     "lint"
