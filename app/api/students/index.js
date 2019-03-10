@@ -63,7 +63,9 @@ router.post('/', (req, res) => {
 router.delete('/:studentId', (req, res) => {
   try {
     const id = req.params.studentId;
-    res.status(200).json(Student.delete(id));
+    const deletedStudent = Student.getById(id);
+    Student.delete(id);
+    res.status(200).json(deletedStudent);
   } catch (err) {
     error(err, res);
   }

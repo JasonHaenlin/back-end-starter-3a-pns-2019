@@ -1,9 +1,8 @@
 const { Student } = require('../../../models');
 
 const attachStudent = (obj) => {
-  const studentId = [obj.studentId];
   const student = [];
-  studentId.forEach((id) => {
+  obj.studentId.forEach((id) => {
     try {
       student.push(Student.getById(id));
     } catch (error) {
